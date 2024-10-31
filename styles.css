@@ -1,47 +1,110 @@
-/* styles.css */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/HelveticaNowDisplay-ExtraBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 10px
+}
+
+.footer a {
+    color: #007BFF;
+    text-decoration: none
+}
+
+.footer a:hover {
+    color: #0056b3
+}
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    color: white
 }
 
 .container {
-    width: 80%;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px
 }
 
-.header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
-}
-
-.title {
-    font-size: 24px;
-    color: #333;
-}
-
-.bookmark-container a {
-    color: blue;
-    text-decoration: underline;
+h1 {
+    font-family: 'CustomFont', Arial, sans-serif;
+    color: white;
+    margin: 0;
+    font-size: 48px
 }
 
 .logout-button {
-    background-color: #ff4d4d;
+    background-color: #007BFF;
     color: white;
+    padding: 10px 20px;
     border: none;
-    padding: 10px;
     cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px
 }
 
-.error-message {
-    color: red;
-    margin-top: 20px;
+.logout-button:hover {
+    background-color: #0056b3
 }
 
 .assignments {
+    margin: 20px 0
+}
+
+.lesson-box {
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #444;
+}
+
+.lesson-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lesson-sequence {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.dropdown {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.notification {
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.notification.yellow {
+    background-color: #FFD700;
+    color: #000;
+}
+
+.notification.red {
+    background-color: #FF6347;
+    color: #fff;
+}
+
+.html-content {
+    display: none;
     margin-top: 20px;
+    background-color: #555;
+    padding: 20px;
+    border-radius: 5px;
 }
