@@ -1,0 +1,47 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.title {
+    font-size: 24px;
+    color: #333;
+}
+
+.bookmark-container a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.logout-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    margin-top: 20px;
+}
+
+.assignments {
+    margin-top: 20px;
+}
